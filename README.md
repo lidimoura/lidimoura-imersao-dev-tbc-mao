@@ -1,7 +1,7 @@
 <div align="center">
 
-# 🌿 Base de conhecimento: Turismo & TBC Manaus
-### Projeto imersão dev Alura & Google
+# 🌿 Base de Conhecimento: Turismo & TBC Manaus
+### Projeto Imersão Dev Alura & Google
 
 ![Status](https://img.shields.io/badge/Status-MVP%20Concluído-success?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/Stack-Node.js%20%7C%20Gemini%20AI-blueviolet?style=for-the-badge)
@@ -12,7 +12,7 @@
 ![Banner do Projeto](https://via.placeholder.com/1000x500?text=Substitua+pelo+Print+da+Sua+Tela)
 *(Interface desenvolvida com foco em acessibilidade e identidade visual amazônica)*
 
-[🔗 **Acesse o projeto online (GitHub Pages)**](https://lidimoura.github.io/lidimoura-imersao-dev-tbc-mao/)
+[🔗 **Acesse o Projeto Online (GitHub Pages)**](https://lidimoura.github.io/lidimoura-imersao-dev-tbc-mao/)
 
 </div>
 
@@ -20,33 +20,33 @@
 
 ## Sobre o projeto
 
-Este projeto é uma **base de conhecimento interativa** focada em **Turismo regional** e experiências autênticas em Manaus, com destaque especial para o **turismo de base comunitária (TBC)**.
+Este projeto é uma **base de conhecimento interativa** focada em **turismo regional** e experiências autênticas em Manaus, com destaque especial para o **turismo de base comunitária (TBC)**.
 
-Desenvolvido durante a **imersão dev com Alura e Google**, o objetivo foi aplicar conceitos de Fullstack (Front-end e Back-end com IA) para resolver um problema real: a falta de centralização de informações atuais sobre roteiros turísticos "raiz", gastronômicos e sustentáveis na Amazônia, especialmente em Manaus. 
+Desenvolvido durante a **Imersão Dev com Alura e Google**, o objetivo foi aplicar conceitos de fullstack (front-end e back-end com IA) para resolver um problema real: a falta de centralização de informações atuais sobre roteiros turísticos "raiz", gastronômicos e sustentáveis na Amazônia, especialmente em Manaus.
 
 ---
 
-## O processo (Curadoria híbrida)
+## O processo (curadoria híbrida)
 
-O grande diferencial deste projeto é a engenharia de dados utilizada para popular a aplicação. Diferente de listas estáticas, utilizamos um fluxo que une expertise humana e Inteligência Artificial:
+O grande diferencial deste projeto é a engenharia de dados utilizada para popular a aplicação. Diferente de listas estáticas, utilizamos um fluxo que une expertise humana e inteligência artificial:
 
-1.  **A semente (Curadoria humana):**
+1.  **A semente (curadoria humana):**
     Criação manual de um arquivo `baseDeConhecimento.json` contendo **25 locais validados** por uma especialista, garantindo a qualidade inicial e o "tom" das descrições.
 
-2.  **O motor (Expansão via IA):**
+2.  **O motor (expansão via IA):**
     Desenvolvimento de um script em **Node.js** conectado à API do **Google Gemini**. O script lê a base inicial e expande a lista automaticamente, buscando novos locais de turismo e TBC que não estavam mapeados.
 
 3.  **O filtro (anti-alucinação):**
-    Utilização de **Prompt Engineering** para focar exclusivamente em cultura regional, natureza e gastronomia autêntica, filtrando locais genéricos.
+    Utilização de **prompt engineering** para focar exclusivamente em cultura regional, natureza e gastronomia autêntica, filtrando locais genéricos.
 
-4.  **O resultado (Front-End):**
+4.  **O resultado (front-end):**
     A aplicação web consome o arquivo JSON final (50 itens) e renderiza os cards com links inteligentes de busca, tags de acessibilidade e design responsivo.
 
 ---
 
 ## Tecnologias utilizadas
 
-| Tech | Função no projeto |
+| Tech | Função no Projeto |
 | :--- | :--- |
 | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) | **Back-end Scripting:** Leitura de arquivos e conexão com API. |
 | ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=flat&logo=googlebard&logoColor=white) | **Inteligência Artificial:** Geração e estruturação de novos dados. |
@@ -70,13 +70,13 @@ Para testar o motor de curadoria IA na sua máquina:
     npm install
     ```
 
-3.  **Configure a Chave API:**
+3.  **Configure a chave API:**
     Crie um arquivo `.env` na raiz e adicione sua chave do Google AI Studio:
     ```env
     GEMINI_API_KEY=sua_chave_aqui
     ```
 
-4.  **Execute o Gerador:**
+4.  **Execute o gerador:**
     ```bash
     npm start
     ```
@@ -93,7 +93,7 @@ Para testar o motor de curadoria IA na sua máquina:
   <br>
   *Criadora de soluções full-stack. Projetando soluções digitais acessíveis (Encontro D'Água Hub) com foco em CS e impacto social.*
   <br>
-  *Especialização em Data Science(aluna ALURA).*
+  *Especialização em Data Science.*
   <br>
   <br>
   
