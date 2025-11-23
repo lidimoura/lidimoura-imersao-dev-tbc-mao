@@ -1,0 +1,707 @@
+[
+  {
+    "id": 1,
+    "nome": "Praia da Lua",
+    "categoria": "Natureza",
+    "descricao": "Uma das praias mais famosas do Rio Negro com areias brancas e águas escuras. Acesso rápido via barco.",
+    "localizacao": "Margem esquerda do Rio Negro (Acesso via Marina do Davi)",
+    "acessibilidade": "Desembarque na areia/praia.",
+    "tags": [
+      "Praia",
+      "Rio Negro",
+      "Lazer"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Praia+da+Lua+Manaus"
+  },
+  {
+    "id": 2,
+    "nome": "MUSA (Museu da Amazônia)",
+    "categoria": "Cultura",
+    "descricao": "Jardim botânico em floresta nativa com torre de observação de 42m acima da copa das árvores.",
+    "localizacao": "Av. Margarita, Cidade de Deus",
+    "acessibilidade": "Trilhas pavimentadas. Torre via escadas.",
+    "tags": [
+      "Torre",
+      "Trilhas",
+      "Botânico"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=MUSA+Manaus"
+  },
+  {
+    "id": 3,
+    "nome": "Bosque da Ciência (INPA)",
+    "categoria": "Natureza",
+    "descricao": "Fragmento de floresta na cidade. Casa do Peixe-boi, ariranhas e educação ambiental.",
+    "localizacao": "Rua Bem-te-vi, Petrópolis",
+    "acessibilidade": "Trilhas pavimentadas e planas.",
+    "tags": [
+      "Peixe-Boi",
+      "Fauna",
+      "Ciência"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Bosque+da+Ciencia+INPA"
+  },
+  {
+    "id": 4,
+    "nome": "Ruínas de Paricatuba",
+    "categoria": "Cultura",
+    "descricao": "Imponentes ruínas históricas abraçadas por raízes de árvores. Cenário fotográfico único.",
+    "localizacao": "Vila de Paricatuba, Iranduba",
+    "acessibilidade": "Terreno irregular nas ruínas.",
+    "tags": [
+      "História",
+      "Fotografia",
+      "Ruínas"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Ruinas+de+Paricatuba"
+  },
+  {
+    "id": 5,
+    "nome": "Cachoeira do Santuário",
+    "categoria": "Natureza",
+    "descricao": "Queda d'água belíssima com a famosa estátua coberta de musgo. Infraestrutura completa.",
+    "localizacao": "Presidente Figueiredo (AM-240)",
+    "acessibilidade": "Escadarias para acesso à queda.",
+    "tags": [
+      "Cachoeira",
+      "Figueiredo",
+      "Banho"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Santuario"
+  },
+  {
+    "id": 6,
+    "nome": "CIGS (Zoológico)",
+    "categoria": "Natureza",
+    "descricao": "Zoológico referência na região. Oportunidade de ver a onça-pintada e fauna amazônica.",
+    "localizacao": "São Jorge, Manaus",
+    "acessibilidade": "Caminhos pavimentados e planos.",
+    "tags": [
+      "Zoológico",
+      "Onça",
+      "Fauna"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Zoológico+CIGS"
+  },
+  {
+    "id": 7,
+    "nome": "Flutuante da Tia",
+    "categoria": "Gastronomia",
+    "descricao": "Tradicional flutuante no Tarumã. Famoso pelo peixe frito e banho de rio.",
+    "localizacao": "Rio Tarumã-Açu",
+    "acessibilidade": "Acesso por barco/rampa.",
+    "tags": [
+      "Peixe Frito",
+      "Flutuante",
+      "Rio"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Flutuante+da+Tia"
+  },
+  {
+    "id": 8,
+    "nome": "Cirandeira Bela",
+    "categoria": "Cultura",
+    "descricao": "Balneário ecológico com igarapé e forte apelo cultural ligado às cirandas.",
+    "localizacao": "Estrada de Manacapuru (AM-070)",
+    "acessibilidade": "Acesso facilitado.",
+    "tags": [
+      "Ciranda",
+      "Igarapé",
+      "Lazer"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cirandeira+Bela"
+  },
+  {
+    "id": 9,
+    "nome": "Café Regional Priscila",
+    "categoria": "Gastronomia",
+    "descricao": "Parada obrigatória para café regional. X-caboquinho, tapioca e sucos.",
+    "localizacao": "Manacapuru / Manaus",
+    "acessibilidade": "Nível da rua.",
+    "tags": [
+      "Café da Manhã",
+      "Regional",
+      "Tapioca"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cafe+Regional+Priscila"
+  },
+  {
+    "id": 10,
+    "nome": "Cachoeira da Pedra Furada",
+    "categoria": "Aventura",
+    "descricao": "Famosa pelas rochas com furos naturais que formam piscinas.",
+    "localizacao": "Presidente Figueiredo",
+    "acessibilidade": "Trilha em terreno natural.",
+    "tags": [
+      "Trilha",
+      "Geologia",
+      "Cachoeira"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cachoeira+da+Pedra+Furada"
+  },
+  {
+    "id": 11,
+    "nome": "Corredeira do Urubuí",
+    "categoria": "Aventura",
+    "descricao": "Corredeiras fortes no centro da cidade de Figueiredo. Muitos restaurantes ao redor.",
+    "localizacao": "Centro de Presidente Figueiredo",
+    "acessibilidade": "Rampas e escadas de concreto.",
+    "tags": [
+      "Corredeira",
+      "Restaurantes",
+      "Lazer"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Corredeira+do+Urubui"
+  },
+  {
+    "id": 12,
+    "nome": "UFAM (Campus)",
+    "categoria": "Natureza",
+    "descricao": "Maior fragmento florestal urbano do mundo. Biodiversidade dentro da cidade.",
+    "localizacao": "Coroado / Japiim",
+    "acessibilidade": "Ruas asfaltadas.",
+    "tags": [
+      "Floresta Urbana",
+      "Caminhada",
+      "Universidade"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=UFAM+Campus"
+  },
+  {
+    "id": 13,
+    "nome": "Mirante Lúcia Almeida",
+    "categoria": "Cultura",
+    "descricao": "Novo ponto turístico no centro com vista espetacular para o Rio Negro.",
+    "localizacao": "Centro Histórico",
+    "acessibilidade": "Totalmente acessível (elevadores).",
+    "tags": [
+      "Vista",
+      "Rio Negro",
+      "Centro"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Mirante+Lucia+Almeida"
+  },
+  {
+    "id": 14,
+    "nome": "Lagoa Azul",
+    "categoria": "Natureza",
+    "descricao": "Águas de tom azulado impressionante (sazonal). Refúgio visual.",
+    "localizacao": "Comunidade Nova Esperança, Figueiredo",
+    "acessibilidade": "Ramal de terra.",
+    "tags": [
+      "Lagoa",
+      "Azul",
+      "Fotografia"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Lagoa+Azul+Presidente+Figueiredo"
+  },
+  {
+    "id": 15,
+    "nome": "Feira da Eduardo Ribeiro",
+    "categoria": "Cultura",
+    "descricao": "Tradição de domingo. Artesanato indígena e café regional na rua.",
+    "localizacao": "Av. Eduardo Ribeiro (Apenas Domingos)",
+    "acessibilidade": "Nível da rua (movimentado).",
+    "tags": [
+      "Feira",
+      "Artesanato",
+      "Rua"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Feira+da+Eduardo+Ribeiro"
+  },
+  {
+    "id": 16,
+    "nome": "Mercado Adolpho Lisboa",
+    "categoria": "Cultura",
+    "descricao": "Joia arquitetônica histórica. Vende peixe, ervas e souvenirs.",
+    "localizacao": "Rua dos Barés, Centro",
+    "acessibilidade": "Boa acessibilidade.",
+    "tags": [
+      "Mercado",
+      "História",
+      "Compras"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Mercado+Adolpho+Lisboa"
+  },
+  {
+    "id": 17,
+    "nome": "Praia da Ponta Negra",
+    "categoria": "Cultura",
+    "descricao": "Cartão postal moderno. Calçadão, praia perene e vida noturna.",
+    "localizacao": "Av. Coronel Teixeira",
+    "acessibilidade": "Rampas e calçadão plano.",
+    "tags": [
+      "Orla",
+      "Praia",
+      "Urbano"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Praia+da+Ponta+Negra"
+  },
+  {
+    "id": 18,
+    "nome": "Feira da Orla da Glória",
+    "categoria": "Gastronomia",
+    "descricao": "Vivência raiz com frutas regionais e peixe fresco chegando do barco.",
+    "localizacao": "Bairro da Glória",
+    "acessibilidade": "Chão pode ser molhado/irregular.",
+    "tags": [
+      "Feira",
+      "Peixe",
+      "Raiz"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Feira+da+Orla+da+Gloria"
+  },
+  {
+    "id": 19,
+    "nome": "Feira do Parque Dez (CSU)",
+    "categoria": "Gastronomia",
+    "descricao": "Point da noite. Famosa pelo tacacá, bingo e ambiente familiar.",
+    "localizacao": "Parque 10 de Novembro",
+    "acessibilidade": "Plano e aberto.",
+    "tags": [
+      "Tacacá",
+      "Noite",
+      "Comida"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=CSU+Parque+10"
+  },
+  {
+    "id": 20,
+    "nome": "Parque Gigantes da Floresta",
+    "categoria": "Aventura",
+    "descricao": "Novo parque cênico com esculturas gigantescas da fauna amazônica.",
+    "localizacao": "Zona Norte/Leste",
+    "acessibilidade": "Projetado com foco em inclusão.",
+    "tags": [
+      "Crianças",
+      "Esculturas",
+      "Parque"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Parque+Gigantes+da+Floresta"
+  },
+  {
+    "id": 21,
+    "nome": "Peixaria do Juvenal",
+    "categoria": "Gastronomia",
+    "descricao": "Referência em peixe assado na brasa. Simples e tradicional.",
+    "localizacao": "Centro (próximo ao Mercado)",
+    "acessibilidade": "Térreo.",
+    "tags": [
+      "Peixe Assado",
+      "Tradicional",
+      "Almoço"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Peixaria+do+Juvenal"
+  },
+  {
+    "id": 22,
+    "nome": "Tambaqui de Banda",
+    "categoria": "Gastronomia",
+    "descricao": "Ao lado do Teatro Amazonas. Famoso pelo Tambaqui inteiro.",
+    "localizacao": "Largo de São Sebastião",
+    "acessibilidade": "Acessível.",
+    "tags": [
+      "Tambaqui",
+      "Turístico",
+      "Centro"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Tambaqui+de+Banda"
+  },
+  {
+    "id": 23,
+    "nome": "Skina do Suco",
+    "categoria": "Gastronomia",
+    "descricao": "Patrimônio afetivo. Sucos de frutas regionais e salgados.",
+    "localizacao": "Centro (Eduardo Ribeiro)",
+    "acessibilidade": "Térreo.",
+    "tags": [
+      "Sucos",
+      "Lanche",
+      "Tradicional"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Skina+do+Suco+Manaus"
+  },
+  {
+    "id": 24,
+    "nome": "Parque do Mindu",
+    "categoria": "Natureza",
+    "descricao": "Refúgio ecológico urbano. Lar do Sauim-de-Coleira.",
+    "localizacao": "Parque 10",
+    "acessibilidade": "Trilhas e anfiteatro.",
+    "tags": [
+      "Ecológico",
+      "Sauim",
+      "Trilha"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Parque+do+Mindu"
+  },
+  {
+    "id": 25,
+    "nome": "Cervejaria Rio Negro",
+    "categoria": "Gastronomia",
+    "descricao": "Cervejas artesanais locais e ambiente pub.",
+    "localizacao": "Rua Francisca Mendes",
+    "acessibilidade": "Acessível.",
+    "tags": [
+      "Cerveja",
+      "Artesanal",
+      "Pub"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cervejaria+Rio+Negro"
+  },
+  {
+    "id": 26,
+    "nome": "Teatro Amazonas",
+    "categoria": "Cultura",
+    "descricao": "O cartão postal de Manaus. Símbolo opulento do Ciclo da Borracha, sua arquitetura europeia é uma parada obrigatória para entender a história local.",
+    "localizacao": "Centro, Manaus",
+    "tags": [
+      "História",
+      "Arquitetura",
+      "Ópera",
+      "Patrimônio"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Teatro+Amazonas+Manaus",
+    "acessibilidade": "Acessibilidade parcial, com rampas e elevadores internos."
+  },
+  {
+    "id": 27,
+    "nome": "Encontro das Águas",
+    "categoria": "Natureza",
+    "descricao": "Fenômeno natural onde as águas escuras do Rio Negro e as barrentas do Rio Solimões correm lado a lado por quilômetros sem se misturar. Uma visão única!",
+    "localizacao": "Fronteira dos rios Negro e Solimões",
+    "tags": [
+      "Rio Negro",
+      "Solimões",
+      "Fenômeno Natural",
+      "Passeio de Barco"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Encontro+das+%C3%81guas+Manaus"
+  },
+  {
+    "id": 28,
+    "nome": "Cachoeira da Iracema",
+    "categoria": "Natureza",
+    "descricao": "Uma das mais acessíveis e famosas quedas d'água de Presidente Figueiredo, ideal para banho e contato direto com a floresta amazônica.",
+    "localizacao": "Presidente Figueiredo, AM",
+    "tags": [
+      "Cachoeira",
+      "Ecoturismo",
+      "Figueiredo",
+      "Banho"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cachoeira+da+Iracema+Presidente+Figueiredo"
+  },
+  {
+    "id": 29,
+    "nome": "Comunidade Indígena Cipiá",
+    "categoria": "Cultura",
+    "descricao": "Experiência autêntica de Turismo de Base Comunitária (TBC). Conheça a cultura, danças e artesanato do povo Dessana/Tukano na beira do Rio Negro.",
+    "localizacao": "Rio Negro, Iranduba",
+    "tags": [
+      "TBC",
+      "Indígena",
+      "Cultura",
+      "Artesanato",
+      "Rio Negro"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Comunidade+Ind%C3%ADgena+Cipi%C3%A1"
+  },
+  {
+    "id": 30,
+    "nome": "Museu do Seringal Vila Paraíso",
+    "categoria": "Cultura",
+    "descricao": "Um museu a céu aberto que recria o cenário de uma vila de extração de látex no auge da borracha. Essencial para entender a história econômica da região.",
+    "localizacao": "Igarapé do Tarumã Mirim, Iranduba",
+    "tags": [
+      "Seringal",
+      "História",
+      "Ciclo da Borracha",
+      "Set de Cinema"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Museu+do+Seringal+Vila+Para%C3%ADso"
+  },
+  {
+    "id": 31,
+    "nome": "Gruta da Judas",
+    "categoria": "Aventura",
+    "descricao": "Uma das cavernas mais impressionantes de Figueiredo. Requer guia e lanterna para explorar suas formações rochosas e a biodiversidade subterrânea.",
+    "localizacao": "Presidente Figueiredo, AM",
+    "tags": [
+      "Caverna",
+      "Espeleologia",
+      "Aventura",
+      "Figueiredo"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Gruta+da+Judas+Presidente+Figueiredo"
+  },
+  {
+    "id": 32,
+    "nome": "Arquipélago de Anavilhanas",
+    "categoria": "Natureza",
+    "descricao": "O segundo maior arquipélago fluvial do mundo, com centenas de ilhas. Ideal para ecoturismo, observação de aves e passeios de canoa pelos igapós e igarapés.",
+    "localizacao": "Novo Airão, AM",
+    "tags": [
+      "Ecoturismo",
+      "Ilhas",
+      "Rio Negro",
+      "Novo Airão",
+      "Biodiversidade"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Arquip%C3%A9lago+de+Anavilhanas"
+  },
+  {
+    "id": 33,
+    "nome": "Feira da Panair (Porto)",
+    "categoria": "Gastronomia",
+    "descricao": "O verdadeiro coração gastronômico de Manaus. Aqui você encontra a maior variedade de peixes frescos e o café da manhã mais raiz da capital.",
+    "localizacao": "Centro, Manaus",
+    "tags": [
+      "Peixe Fresco",
+      "Gastronomia Raiz",
+      "Feira",
+      "Porto"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Feira+da+Panair+Manaus"
+  },
+  {
+    "id": 34,
+    "nome": "Palácio Rio Negro",
+    "categoria": "Cultura",
+    "descricao": "Antiga sede do governo estadual e residência de barões da borracha. Hoje funciona como Centro Cultural com exposições e arquitetura preservada.",
+    "localizacao": "Centro, Manaus",
+    "tags": [
+      "História",
+      "Arquitetura",
+      "Centro Cultural",
+      "Patrimônio"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio+Rio+Negro+Manaus"
+  },
+  {
+    "id": 35,
+    "nome": "Pousada dos Botos (Novo Airão)",
+    "categoria": "Natureza",
+    "descricao": "Local famoso para a interação monitorada com os botos-cor-de-rosa, os golfinhos de água doce. Uma experiência inesquecível de ecoturismo responsável.",
+    "localizacao": "Novo Airão, AM",
+    "tags": [
+      "Botos",
+      "Ecoturismo",
+      "Novo Airão",
+      "Interação"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Pousada+dos+Botos+Novo+Air%C3%A3o"
+  },
+  {
+    "id": 36,
+    "nome": "Cachoeira do Mutum",
+    "categoria": "Natureza",
+    "descricao": "Um complexo de cachoeira e balneário bastante procurado, com piscinas naturais formadas pelas águas cristalinas dos rios de Presidente Figueiredo.",
+    "localizacao": "Presidente Figueiredo, AM",
+    "tags": [
+      "Cachoeira",
+      "Balneário",
+      "Figueiredo",
+      "Banho"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cachoeira+do+Mutum+Presidente+Figueiredo"
+  },
+  {
+    "id": 37,
+    "nome": "Restaurante Banzeiro",
+    "categoria": "Gastronomia",
+    "descricao": "Conhecido por elevar a culinária amazônica a um patamar contemporâneo. O lugar ideal para degustar o melhor do peixe regional com requinte.",
+    "localizacao": "Nossa Senhora das Graças, Manaus",
+    "tags": [
+      "Gastronomia",
+      "Peixe",
+      "Culinária Contemporânea",
+      "Jantar"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Restaurante+Banzeiro+Manaus"
+  },
+  {
+    "id": 38,
+    "nome": "Balneário do Açutuba",
+    "categoria": "Natureza",
+    "descricao": "Localizado em Iranduba, é um dos principais balneários fluviais na margem esquerda do Rio Negro. Perfeito para relaxar na 'praia' durante a vazante.",
+    "localizacao": "Iranduba, AM",
+    "tags": [
+      "Praia de Rio",
+      "Rio Negro",
+      "Balneário",
+      "Férias"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Balne%C3%A1rio+do+A%C3%A7utuba+Iranduba"
+  },
+  {
+    "id": 39,
+    "nome": "Centro Cultural Povos da Amazônia (CCPA)",
+    "categoria": "Cultura",
+    "descricao": "Situado no antigo 'Estaleiro Chácara Bittencourt', o CCPA abriga museus e pavilhões focados na rica diversidade cultural dos povos amazônicos.",
+    "localizacao": "Distrito Industrial, Manaus",
+    "tags": [
+      "Cultura",
+      "Museu",
+      "História",
+      "Exposições"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Centro+Cultural+Povos+da+Amaz%C3%B4nia"
+  },
+  {
+    "id": 40,
+    "nome": "Caverna do Maroaga e Gruta da Judeia",
+    "categoria": "Aventura",
+    "descricao": "Um dos principais complexos de cavernas de Figueiredo. Oferece trilhas em mata fechada e a beleza geológica das grutas, com piscina natural na saída.",
+    "localizacao": "Presidente Figueiredo, AM",
+    "tags": [
+      "Caverna",
+      "Gruta",
+      "Trilha",
+      "Ecoturismo",
+      "Figueiredo"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Caverna+do+Maroaga+e+Gruta+da+Judeia"
+  },
+  {
+    "id": 41,
+    "nome": "Sítio Dona Nice",
+    "categoria": "Gastronomia",
+    "descricao": "Famoso café regional que serve o autêntico e farto desjejum amazônico: pães, tapiocas, bolo de macaxeira e o indispensável X-Caboquinho. Raiz pura!",
+    "localizacao": "Lírio do Vale, Manaus",
+    "tags": [
+      "Café Regional",
+      "Gastronomia Raiz",
+      "X-Caboquinho",
+      "Café da Manhã"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=S%C3%ADtio+Dona+Nice+Manaus"
+  },
+  {
+    "id": 42,
+    "nome": "Museu da Cidade de Manaus (Paço da Liberdade)",
+    "categoria": "Cultura",
+    "descricao": "Localizado na antiga sede da Prefeitura, o museu narra a trajetória urbana da capital, desde os povos originários até a modernidade.",
+    "localizacao": "Centro, Manaus",
+    "tags": [
+      "História",
+      "Museu",
+      "Urbanismo",
+      "Centro Histórico"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Museu+da+Cidade+de+Manaus"
+  },
+  {
+    "id": 43,
+    "nome": "Cachoeira da Neblina",
+    "categoria": "Natureza",
+    "descricao": "Queda d'água robusta e mais isolada em Presidente Figueiredo, exigindo trilha moderada, mas recompensando com um visual selvagem e imponente.",
+    "localizacao": "Presidente Figueiredo, AM",
+    "tags": [
+      "Cachoeira",
+      "Trilha",
+      "Ecoturismo",
+      "Figueiredo"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cachoeira+da+Neblina+Presidente+Figueiredo"
+  },
+  {
+    "id": 44,
+    "nome": "Parque Nacional do Jaú",
+    "categoria": "Natureza",
+    "descricao": "A maior reserva florestal protegida do Brasil. Acessível via Novo Airão, oferece turismo de base e a oportunidade de ver a floresta em seu estado mais puro.",
+    "localizacao": "Novo Airão, AM",
+    "tags": [
+      "Parque Nacional",
+      "Biodiversidade",
+      "Novo Airão",
+      "Conservação"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Parque+Nacional+do+Ja%C3%BA"
+  },
+  {
+    "id": 45,
+    "nome": "Praia Grande de Iranduba",
+    "categoria": "Natureza",
+    "descricao": "Uma das maiores praias de rio formada pela vazante do Rio Negro. Areias brancas e águas calmas, ideal para um dia de sol e descanso.",
+    "localizacao": "Iranduba, AM",
+    "tags": [
+      "Praia de Rio",
+      "Rio Negro",
+      "Iranduba",
+      "Lazer"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Praia+Grande+de+Iranduba"
+  },
+  {
+    "id": 46,
+    "nome": "Cachoeira Berro d'Água",
+    "categoria": "Natureza",
+    "descricao": "Uma cachoeira menos comercializada em Figueiredo, garantindo tranquilidade e uma paisagem preservada para quem busca imersão na natureza.",
+    "localizacao": "Presidente Figueiredo, AM",
+    "tags": [
+      "Cachoeira",
+      "Ecoturismo",
+      "Figueiredo",
+      "Paz"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Cachoeira+Berro+d'%C3%81gua+Presidente+Figueiredo"
+  },
+  {
+    "id": 47,
+    "nome": "Centro de Artesanato Branco e Silva",
+    "categoria": "Cultura",
+    "descricao": "Local para adquirir peças de artesanato genuinamente amazônico, incluindo cerâmicas, cestarias e biojoias, direto de produtores locais.",
+    "localizacao": "Centro, Manaus",
+    "tags": [
+      "Artesanato",
+      "Lembranças",
+      "Cultura",
+      "Compras"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Centro+de+Artesanato+Branco+e+Silva+Manaus"
+  },
+  {
+    "id": 48,
+    "nome": "Café do Pina",
+    "categoria": "Gastronomia",
+    "descricao": "Referência em café regional de Manaus, conhecido pela qualidade dos seus pratos típicos, como o pão com tucumã e os sucos frescos de frutas regionais.",
+    "localizacao": "São José Operário, Manaus",
+    "tags": [
+      "Café Regional",
+      "Tucumã",
+      "Gastronomia Raiz",
+      "Desjejum"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+do+Pina+Manaus"
+  },
+  {
+    "id": 49,
+    "nome": "Flutuante do Chef (Novo Airão)",
+    "categoria": "Gastronomia",
+    "descricao": "Restaurante flutuante famoso em Novo Airão. Deguste pratos de peixe fresquíssimos, como o Tambaqui assado, com a vista espetacular do Rio Negro.",
+    "localizacao": "Novo Airão, AM",
+    "tags": [
+      "Flutuante",
+      "Gastronomia",
+      "Peixe",
+      "Rio Negro",
+      "Novo Airão"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Flutuante+do+Chef+Novo+Air%C3%A3o"
+  },
+  {
+    "id": 50,
+    "nome": "Santuário de Nossa Senhora de Nazaré (Iranduba)",
+    "categoria": "Cultura",
+    "descricao": "Um ponto de fé e peregrinação em Iranduba. Conhecido pela tranquilidade e pela arquitetura religiosa que atrai fiéis de toda a região metropolitana.",
+    "localizacao": "Iranduba, AM",
+    "tags": [
+      "Religião",
+      "Arquitetura",
+      "Fé",
+      "Iranduba"
+    ],
+    "link_externo": "https://www.google.com/maps/search/?api=1&query=Santu%C3%A1rio+de+Nossa+Senhora+de+Nazar%C3%A9+Iranduba"
+  }
+]
