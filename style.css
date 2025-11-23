@@ -1,63 +1,119 @@
-let dados = [];
-
-async function carregarDados() {
-    try {
-        const response = await fetch('data.json');
-        dados = await response.json();
-        exibirCards(dados);
-    } catch (error) {
-        console.error("Erro ao carregar data.json:", error);
-    }
+:root {
+    /* PALETA ENCONTRO D'ÁGUA */
+    --rio-negro: #1A0F0F;       /* Preto profundo */
+    --solimoes: #CD9863;        /* Barrento */
+    --acai: #6A1B4D;            /* Magenta Açaí */
+    --acai-vibrante: #8E2466;   
+    
+    --fundo: #F8F5F2;
+    --texto: #2D2D2D;
+    --card-bg: #FFFFFF;
 }
 
-function exibirCards(lista) {
-    const container = document.getElementById('resultados-pesquisa');
-    container.innerHTML = '';
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
 
-    if (lista.length === 0) {
-        container.innerHTML = '<p style="text-align:center; width:100%">Nenhum local encontrado.</p>';
-        return;
-    }
-
-    lista.forEach(item => {
-        // Card Limpo e Informativo
-        const card = document.createElement('article');
-        card.className = 'card';
-        
-        card.innerHTML = `
-            <span class="categoria">${item.categoria}</span>
-            <h2>${item.nome}</h2>
-            
-            <div class="info-box">
-                <div class="info-linha">
-                    <span>📍</span> <span>${item.localizacao}</span>
-                </div>
-                <div class="info-linha">
-                    <span>♿</span> <span>${item.acessibilidade}</span>
-                </div>
-            </div>
-
-            <p class="descricao">${item.descricao}</p>
-            
-            <a href="${item.link_externo}" target="_blank" class="btn-link">Ver no Google Maps 🗺️</a>
-        `;
-        
-        container.appendChild(card);
-    });
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    display: flex; flex-direction: column; min-height: 100vh;
 }
 
-function pesquisar() {
-    const termo = document.getElementById('campo-pesquisa').value.toLowerCase();
-    const resultados = dados.filter(item => 
-        item.nome.toLowerCase().includes(termo) || 
-        item.descricao.toLowerCase().includes(termo) ||
-        item.tags.some(tag => tag.toLowerCase().includes(termo))
-    );
-    exibirCards(resultados);
+/* HEADER */
+header {
+    background-color: var(--rio-negro);
+    color: white;
+    text-align: center;
+    padding: 3.5rem 1rem;
+    border-bottom: 6px solid var(--solimoes);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
-document.getElementById('campo-pesquisa').addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') pesquisar();
-});
+h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 0.5rem; letter-spacing: -1px; }
+.destaque { color: var(--solimoes); }
+.subtitulo { color: #CCC; margin-bottom: 2rem; font-weight: 300; font-size: 1.1rem; }
 
-carregarDados();
+/* BUSCA */
+.search-box { display: flex; justify-content: center; gap: 10px; max-width: 600px; margin: 0 auto; }
+input {
+    width: 70%; padding: 14px 25px; border-radius: 30px; border: 2px solid var(--solimoes);
+    font-size: 1rem; outline: none; background: rgba(255,255,255,0.95);
+}
+input:focus { border-color: var(--acai); box-shadow: 0 0 10px rgba(106, 27, 77, 0.3); }
+button {
+    padding: 12px 30px; border-radius: 30px; border: none; background-color: var(--acai);
+    color: white; font-weight: bold; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+button:hover { background-color: var(--acai-vibrante); transform: translateY(-2px); }
+
+/* MAIN */
+main { flex: 1; padding: 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+.card-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
+
+/* CARD (Visual Rico sem Emoji Gigante) */
+.card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex; flex-direction: column;
+    border: 1px solid #EAEAEA;
+}
+
+.card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+
+/* O TOPO COLORIDO (Faixa decorativa) */
+.card-visual {
+    height: 100px; /* Altura menor, elegante */
+    background: linear-gradient(135deg, var(--rio-negro), var(--acai)); /* O gradiente lindo */
+    border-bottom: 5px solid var(--solimoes);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Categoria dentro da faixa colorida */
+.categoria-tag {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.card-content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+
+h2 { color: var(--rio-negro); margin-bottom: 10px; font-size: 1.4rem; font-family: 'Montserrat', sans-serif; }
+
+.info-local {
+    font-size: 0.85rem; color: #666; margin-bottom: 15px; 
+    display: flex; align-items: center; gap: 6px; font-weight: 600;
+}
+
+.descricao { color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; flex: 1; }
+
+.btn-link {
+    display: block; text-align: center; background-color: white;
+    color: var(--acai); border: 2px solid var(--acai); text-decoration: none;
+    padding: 12px; border-radius: 8px; font-weight: bold; transition: 0.3s;
+}
+.btn-link:hover { background-color: var(--acai); color: white; }
+
+/* FOOTER */
+footer {
+    background-color: var(--rio-negro); color: white; padding: 3rem 1rem;
+    text-align: center; border-top: 4px solid var(--solimoes); margin-top: auto;
+}
+.footer-content { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-bottom: 2rem; }
+.dev-profile { display: flex; align-items: center; gap: 15px; text-align: left; }
+.foto-perfil { width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--solimoes); }
+.dev-profile strong { color: var(--solimoes); }
+.footer-links a { color: var(--solimoes); text-decoration: none; font-weight: bold; font-size: 1rem; margin: 0 10px; transition: 0.3s; }
+.footer-links a:hover { color: var(--acai-vibrante); }
+.copyright { font-size: 0.8rem; color: #777; border-top: 1px solid #333; padding-top: 20px; }
