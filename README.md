@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 Base de Conhecimento: Turismo de base comunitária Manaus
+# 🌿 Base de Conhecimento: Turismo & TBC Manaus
 ### Projeto Imersão Dev Alura & Google
 
 ![Status](https://img.shields.io/badge/Status-MVP%20Concluído-success?style=for-the-badge)
@@ -20,9 +20,9 @@
 
 ## Sobre o Projeto
 
-Este projeto é uma **Base de Conhecimento Interativa** focada em **Turismo de Base Comunitária (TBC)** e experiências autênticas em Manaus e arredores.
+Este projeto é uma **Base de Conhecimento Interativa** focada em **Turismo Regional** e experiências autênticas em Manaus, com destaque especial para o **Turismo de Base Comunitária (TBC)**.
 
-FOi desenvolvido durante a **Imersão Dev com Alura e Google**, com o objetivo foi aplicar conceitos de Fullstack (Front-end e Back-end com IA) para resolver um problema real: a falta de centralização de informações atuais e verifcadas sobre roteiros turísticos "raiz" e sustentáveis na Amazonas, especialmente Manaus/AM.
+Desenvolvido durante a **Imersão Dev com Alura e Google**, o objetivo foi aplicar conceitos de Fullstack (Front-end e Back-end com IA) para resolver um problema real: a falta de centralização de informações sobre roteiros "raiz", gastronômicos e sustentáveis na Amazônia.
 
 ---
 
@@ -30,16 +30,16 @@ FOi desenvolvido durante a **Imersão Dev com Alura e Google**, com o objetivo f
 
 O grande diferencial deste projeto é a engenharia de dados utilizada para popular a aplicação. Diferente de listas estáticas, utilizamos um fluxo que une expertise humana e Inteligência Artificial:
 
-1.  **A semente (curadoria humana):**
+1.  **A Semente (Curadoria Humana):**
     Criação manual de um arquivo `baseDeConhecimento.json` contendo **25 locais validados** por uma especialista, garantindo a qualidade inicial e o "tom" das descrições.
 
 2.  **O Motor (Expansão via IA):**
-    Desenvolvimento de um script em **Node.js** conectado à API do **Google Gemini**. O script lê a base inicial e expande a lista automaticamente, buscando novos locais de TBC que não estavam mapeados.
+    Desenvolvimento de um script em **Node.js** conectado à API do **Google Gemini**. O script lê a base inicial e expande a lista automaticamente, buscando novos locais de turismo e TBC que não estavam mapeados.
 
 3.  **O Filtro (Anti-Alucinação):**
     Utilização de **Prompt Engineering** para focar exclusivamente em cultura regional, natureza e gastronomia autêntica, filtrando locais genéricos.
 
-4.  **Resultado (Front-End):**
+4.  **O Resultado (Front-End):**
     A aplicação web consome o arquivo JSON final (50 itens) e renderiza os cards com links inteligentes de busca, tags de acessibilidade e design responsivo.
 
 ---
@@ -93,7 +93,7 @@ Para testar o motor de curadoria IA na sua máquina:
   <br>
   *Criadora de soluções full-stack. Projetando soluções digitais acessíveis (Encontro D'Água Hub) com foco em CS e impacto social.*
   <br>
-  *Especialização em Data Science (aluna ALURA).*
+  *Especialização em Data Science.*
   <br>
   <br>
   
@@ -104,4 +104,4 @@ Para testar o motor de curadoria IA na sua máquina:
 
 ---
 
-> Feito com 💜 durante a Imersão Dev da Alura.
+> Feito com 💛 durante a Imersão Dev da Alura.
