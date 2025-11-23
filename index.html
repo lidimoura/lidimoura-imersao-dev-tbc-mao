@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>Turismo de base comunitária Manaus | Base de Conhecimento</title>
+</head>
+<body>
+    <header>
+        <h1>Guia de Turismo <span class="destaque"> de base comunitária em Manaus</span></h1>
+        <p class="subtitulo">Base de conhecimento sobre experiências autênticas na Amazônia</p>
+        
+        <div class="search-box">
+            <input type="text" id="campo-pesquisa" placeholder="Busque por cachoeira, café regional, museu...">
+            <button id="botao-busca" onclick="pesquisar()">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="card-container" id="resultados-pesquisa">
+            <p class="aviso-carregando">Carregando experiências...</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="dev-profile">
+                <img src="https://github.com/lidimoura.png" alt="Lidi Moura" class="foto-perfil">
+                <p>Curadoria e Código por <strong>Lídi Moura</strong></p>
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="https://github.com/lidimoura" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/lidimoura" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <p class="copyright">Projeto Imersão Dev Alura & Google</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
