@@ -1,10 +1,8 @@
 :root {
-    /* PALETA ENCONTRO D'ÁGUA */
     --rio-negro: #1A0F0F;
     --solimoes: #CD9863;
     --acai: #6A1B4D;
     --acai-vibrante: #8E2466;
-    
     --fundo: #F9F9F9;
     --texto: #333;
     --card-bg: #FFFFFF;
@@ -12,132 +10,79 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
 
-body {
-    background-color: var(--fundo);
-    color: var(--texto);
-    display: flex; flex-direction: column; min-height: 100vh;
-}
+body { background-color: var(--fundo); color: var(--texto); display: flex; flex-direction: column; min-height: 100vh; }
 
-/* --- HEADER --- */
+/* HEADER */
 header {
-    background-color: var(--rio-negro);
-    color: white;
-    text-align: center;
-    padding: 2.5rem 1rem; /* Mais compacto */
-    border-bottom: 4px solid var(--solimoes); /* Linha mais fina */
+    background-color: var(--rio-negro); color: white; text-align: center;
+    padding: 2.5rem 1rem; border-bottom: 4px solid var(--solimoes);
 }
-
-h1 { 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 2rem; /* Fonte levemente menor */
-    margin-bottom: 0.5rem; 
-    letter-spacing: -0.5px; 
-}
-
+h1 { font-family: 'Montserrat', sans-serif; font-size: 2rem; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
 .destaque { color: var(--solimoes); }
-.subtitulo { color: #CCC; margin-bottom: 1.5rem; font-weight: 300; font-size: 0.95rem; }
+.subtitulo { color: #CCC; margin-bottom: 1.5rem; font-weight: 300; font-size: 0.9rem; }
 
-/* --- BUSCA --- */
+/* BUSCA - Botão Compacto */
 .search-box { display: flex; justify-content: center; gap: 8px; max-width: 550px; margin: 0 auto; }
-
 input {
-    width: 70%; padding: 10px 20px; border-radius: 50px; /* Inputs mais finos */
-    border: 1px solid var(--solimoes); font-size: 0.9rem; 
-    outline: none; background: rgba(255,255,255,0.95);
+    width: 70%; padding: 10px 20px; border-radius: 50px; border: 1px solid var(--solimoes);
+    font-size: 0.95rem; outline: none; background: rgba(255,255,255,0.95);
 }
-input:focus { border-color: var(--acai); box-shadow: 0 0 8px rgba(106, 27, 77, 0.2); }
-
 button {
     padding: 10px 20px; border-radius: 50px; border: none; background-color: var(--acai);
-    color: white; font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: 0.3s;
+    color: white; font-weight: 600; font-size: 0.9rem; cursor: pointer;
 }
-button:hover { background-color: var(--acai-vibrante); transform: translateY(-1px); }
 
-/* --- GRID --- */
+/* GRID */
 main { flex: 1; padding: 2rem 1rem; max-width: 1100px; margin: 0 auto; width: 100%; }
+.card-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 
-.card-container { 
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; 
-}
-
-/* --- CARD CLEAN --- */
+/* CARD CLEAN */
 .card {
-    background: var(--card-bg);
-    border-radius: 10px; /* Bordas menos arredondadas, mais sérias */
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Sombra sutil */
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex; flex-direction: column;
-    border: 1px solid #EEE;
+    background: var(--card-bg); border-radius: 10px; overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.3s;
+    display: flex; flex-direction: column; border: 1px solid #EEE;
 }
+.card:hover { transform: translateY(-3px); border-color: #DDD; }
 
-.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-color: #DDD; }
-
-/* Faixa Visual Fina */
+/* FAIXA VISUAL */
 .card-visual {
-    height: 60px; /* Bem mais baixo, minimalista */
-    background: linear-gradient(135deg, var(--rio-negro), var(--acai)); 
-    border-bottom: 3px solid var(--solimoes);
-    display: flex; align-items: center; justify-content: center;
+    height: 60px; background: linear-gradient(135deg, var(--rio-negro), var(--acai));
+    border-bottom: 3px solid var(--solimoes); display: flex; align-items: center; justify-content: center;
 }
-
 .categoria-tag {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white; padding: 4px 12px; border-radius: 15px;
-    font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
-    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(0, 0, 0, 0.3); color: white; padding: 4px 12px;
+    border-radius: 15px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 1px; border: 1px solid rgba(255,255,255,0.2);
 }
 
 .card-content { padding: 1.2rem; flex: 1; display: flex; flex-direction: column; }
+h2 { color: var(--rio-negro); margin-bottom: 8px; font-size: 1.2rem; font-family: 'Montserrat', sans-serif; }
+.info-local, .info-acess { font-size: 0.8rem; color: #666; margin-bottom: 6px; display: flex; align-items: center; gap: 5px; }
+.descricao { color: #555; font-size: 0.85rem; line-height: 1.5; margin-top: 10px; margin-bottom: 20px; flex: 1; }
 
-h2 { 
-    color: var(--rio-negro); margin-bottom: 8px; font-size: 1.2rem; /* Título equilibrado */
-    font-family: 'Montserrat', sans-serif; line-height: 1.3;
-}
-
-.info-local, .info-acess {
-    font-size: 0.8rem; color: #666; margin-bottom: 6px; 
-    display: flex; align-items: center; gap: 5px;
-}
-
-.descricao { 
-    color: #555; font-size: 0.85rem; line-height: 1.5; margin-top: 10px; margin-bottom: 20px; flex: 1; 
-}
-
-/* BOTÃO CARD (Minimalista) */
+/* BOTÃO DO MAPA (Minimalista) */
 .btn-link {
     display: block; text-align: center; background-color: white;
-    color: var(--acai); border: 1px solid var(--acai); /* Borda fina */
-    text-decoration: none; padding: 8px 0; /* Padding reduzido */
+    color: var(--acai); border: 1px solid var(--acai); /* Borda Fina */
+    text-decoration: none; padding: 8px 0; /* Padding Pequeno */
     border-radius: 6px; font-size: 0.85rem; font-weight: 600; transition: 0.2s;
 }
-
 .btn-link:hover { background-color: var(--acai); color: white; }
 
-/* --- BOTÃO VER MAIS --- */
-.ver-mais-container {
-    width: 100%; display: flex; justify-content: center; margin-top: 30px; margin-bottom: 10px;
-    display: none;
-}
-
+/* BOTÃO VER MAIS (Minimalista) */
+.ver-mais-container { width: 100%; display: flex; justify-content: center; margin-top: 30px; margin-bottom: 10px; display: none; }
 #btn-ver-mais {
     background-color: transparent; border: 1px solid var(--acai); color: var(--acai);
     padding: 8px 25px; border-radius: 50px; font-size: 0.9rem; font-weight: 600;
-    cursor: pointer; transition: 0.3s;
+    cursor: pointer;
 }
-
 #btn-ver-mais:hover { background-color: var(--acai); color: white; }
 
-/* --- FOOTER --- */
-footer {
-    background-color: var(--rio-negro); color: #AAA; padding: 2rem 1rem;
-    text-align: center; border-top: 3px solid var(--solimoes); margin-top: auto; font-size: 0.85rem;
-}
-
+/* FOOTER */
+footer { background-color: var(--rio-negro); color: #AAA; padding: 2rem 1rem; text-align: center; border-top: 3px solid var(--solimoes); margin-top: auto; font-size: 0.85rem; }
 .footer-content { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 1.5rem; }
 .dev-profile { display: flex; align-items: center; gap: 10px; }
 .foto-perfil { width: 45px; height: 45px; border-radius: 50%; border: 2px solid var(--solimoes); }
 .dev-profile strong { color: var(--solimoes); }
-.footer-links a { color: var(--solimoes); text-decoration: none; margin: 0 8px; transition: 0.3s; }
-.footer-links a:hover { color: var(--acai-vibrante); }
+.footer-links a { color: var(--solimoes); text-decoration: none; margin: 0 8px; }
 .copyright { border-top: 1px solid #333; padding-top: 15px; max-width: 500px; margin: 0 auto; }
