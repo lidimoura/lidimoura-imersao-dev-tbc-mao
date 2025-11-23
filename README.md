@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 Base de Conhecimento: Turismo & TBC Manaus
+# 🌿 Base de Conhecimento: Turismo regional & TBC Manaus
 ### Projeto Imersão Dev Alura & Google
 
 ![Status](https://img.shields.io/badge/Status-MVP%20Concluído-success?style=for-the-badge)
