@@ -20,7 +20,7 @@
 
 ## Sobre o projeto
 
-Este projeto é uma **base de conhecimento interativa** focada em **Turismo regional** e experiências autênticas em Manaus, com destaque especial para o **Turismo de base comunitária (TBC)**.
+Este projeto é uma **base de conhecimento interativa** focada em **Turismo regional** e experiências autênticas em Manaus, com destaque especial para o **turismo de base comunitária (TBC)**.
 
 Desenvolvido durante a **imersão dev com Alura e Google**, o objetivo foi aplicar conceitos de Fullstack (Front-end e Back-end com IA) para resolver um problema real: a falta de centralização de informações atuais sobre roteiros turísticos "raiz", gastronômicos e sustentáveis na Amazônia, especialmente em Manaus. 
 
