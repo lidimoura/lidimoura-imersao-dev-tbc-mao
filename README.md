@@ -93,7 +93,7 @@ Para testar o motor de curadoria IA na sua máquina:
   <br>
   *Criadora de soluções full-stack. Projetando soluções digitais acessíveis (Encontro D'Água Hub) com foco em CS e impacto social.*
   <br>
-  *Especialização em Data Science.*
+  *Especialização em Data Science (aluna ALURA).*
   <br>
   <br>
   
