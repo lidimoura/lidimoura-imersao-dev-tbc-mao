@@ -1,15 +1,15 @@
-let dados = []; // Todos os dados carregados
-let dadosFiltrados = []; // Dados que estão sendo exibidos (pode ser busca ou tudo)
-let limiteAtual = 9; // Quantos cards aparecem por vez
+let dados = [];
+let dadosFiltrados = [];
+let limiteAtual = 10; 
 
 async function carregarDados() {
     try {
         const response = await fetch('data.json');
         dados = await response.json();
-        dadosFiltrados = dados; // Inicialmente, os filtrados são todos
+        dadosFiltrados = dados;
         exibirCards();
     } catch (error) {
-        console.error("Erro ao carregar data.json:", error);
+        console.error("Erro:", error);
     }
 }
 
@@ -25,7 +25,6 @@ function exibirCards() {
         return;
     }
 
-    // Pega apenas a fatia (slice) dos dados baseada no limite atual
     const dadosParaMostrar = dadosFiltrados.slice(0, limiteAtual);
 
     dadosParaMostrar.forEach(item => {
@@ -38,17 +37,24 @@ function exibirCards() {
             </div>
             <div class="card-content">
                 <h2>${item.nome}</h2>
+                
                 <div class="info-local">📍 ${item.localizacao}</div>
+                
+                <div class="info-acess">
+                    <strong>Acessibilidade:</strong> ${item.acessibilidade}
+                </div>
+
                 <p class="descricao">${item.descricao}</p>
-                <a href="${item.link_externo}" target="_blank" class="btn-link">Ver no Google Maps 🗺️</a>
+                
+                <a href="${item.link_externo}" target="_blank" class="btn-link">
+                    Ver no Google Maps
+                </a>
             </div>
         `;
         
         container.appendChild(card);
     });
 
-    // Lógica do Botão Ver Mais
-    // Se ainda tiver mais itens do que o limite atual, mostra o botão
     if (dadosFiltrados.length > limiteAtual) {
         btnVerMais.style.display = 'flex';
     } else {
@@ -57,22 +63,20 @@ function exibirCards() {
 }
 
 function verMais() {
-    limiteAtual += 9; // Aumenta +9 a cada clique
+    limiteAtual += 10;
     exibirCards();
 }
 
 function pesquisar() {
     const termo = document.getElementById('campo-pesquisa').value.toLowerCase();
     
-    // Filtra na base total
     dadosFiltrados = dados.filter(item => 
         item.nome.toLowerCase().includes(termo) || 
         item.descricao.toLowerCase().includes(termo) ||
         item.tags.some(tag => tag.toLowerCase().includes(termo))
     );
 
-    // Reseta o limite para 9 quando faz uma nova busca (UX melhor)
-    limiteAtual = 9; 
+    limiteAtual = 10; 
     exibirCards();
 }
 
